@@ -1,0 +1,27 @@
+function lyns_abbr
+    abbr -e la
+    abbr -e ls
+    abbr -e cd 
+    abbr -e dir
+    abbr -a -g -- .1 'cd /usr/share/lyns'
+    abbr -a -g -- .2 'cd /usr/share/zsh.core'
+    abbr -a -g -- .3 'cd /usr/share/zsh.theme'
+    abbr -a -g -- .4 'cd /usr/share/zsh.methods'
+    abbr -a -g -- .5 'cd /usr/share/zshrc'
+    abbr -a -g -- .a 'abbr -q'  # queries abbr
+    abbr -a -g -- _abbr lyns_abbr
+    abbr -a -g -- c lyns_widget_list
+    abbr -a -g -- config_widget_cd lyns_widget_list
+    abbr -a -g -- gc 'git clone'
+    abbr -a -g -- gcb 'git checkout -b'
+    abbr -a -g -- gra 'git remote add'
+    abbr -a -g -- grv 'git remote -v'
+    abbr -a -g -- sofc 'source /root/.config/lyns/config.lyns'
+    abbr -g -a s9.reload -- "source $ZSH_CUSTOM/.zshrc; lyns" 
+    abbr -g -a s9.omzre -- 'source ~/.oh-my-zsh/oh-my-zsh.sh'
+    abbr -g -a s9.omz -- ohmyzsh
+    abbr -g -a kube_auto -- 'complete -F __start_kubectl  k'
+    abbr -g -a fbn -- "find . -name "
+    abbr -g -a h htop
+    abbr -g -a k kubectl
+end

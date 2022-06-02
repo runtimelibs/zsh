@@ -1,0 +1,14 @@
+*
+!*.json
+!*.lyns
+!*.fish
+!*.ts
+!*.js
+node_modules
+!*.yaml
+!*.yml
+!.npmrc
+!entrypoint
+!.zshrc
+!.gitignore
+!.dockerignore
