@@ -1,0 +1,30 @@
+# name: 'Dracula'
+# preferred_background: 282a36
+
+lyns_color_normal normal
+lyns_color_command F8F8F2
+lyns_color_quote F1FA8C
+lyns_color_redirection 8BE9FD
+lyns_color_end 50FA7B
+lyns_color_error FFB86C
+lyns_color_param FF79C6
+lyns_color_comment 6272A4
+lyns_color_match --background=brblue
+lyns_color_selection white --bold --background=brblack
+lyns_color_search_match bryellow --background=brblack
+lyns_color_history_current --bold
+lyns_color_operator 00a6b2
+lyns_color_escape 00a6b2
+lyns_color_cwd green
+lyns_color_cwd_root red
+lyns_color_valid_path --underline
+lyns_color_autosuggestion BD93F9
+lyns_color_user brgreen
+lyns_color_host normal
+lyns_color_cancel -r
+lyns_pager_color_completion normal
+lyns_pager_color_description B3A06D yellow
+lyns_pager_color_prefix normal --bold --underline
+lyns_pager_color_progress brwhite --background=cyan
+lyns_color_option FF79C6
+lyns_color_keyword F8F8F2

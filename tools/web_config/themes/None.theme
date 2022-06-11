@@ -1,0 +1,32 @@
+# name: '(Almost) No Colors'
+# preferred_background: 'black'
+
+lyns_color_autosuggestion brblack
+lyns_color_cancel
+lyns_color_command
+lyns_color_comment
+lyns_color_cwd normal
+lyns_color_cwd_root normal
+lyns_color_end
+lyns_color_error
+lyns_color_escape
+lyns_color_history_current
+lyns_color_host normal
+lyns_color_keyword
+lyns_color_match
+lyns_color_normal normal
+lyns_color_operator
+lyns_color_option
+lyns_color_param
+lyns_color_quote
+lyns_color_redirection
+lyns_color_search_match -r
+lyns_color_selection -r
+lyns_color_status normal
+lyns_color_user normal
+lyns_color_valid_path
+lyns_pager_color_completion normal
+lyns_pager_color_description brblack
+lyns_pager_color_prefix '--underline'
+lyns_pager_color_progress brblack
+lyns_pager_color_selected_background -r

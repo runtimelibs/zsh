@@ -1,0 +1,31 @@
+# name: ayu Mirage
+# url: 'https://github.com/dempfi/ayu'
+# preferred_background: 1F2430
+
+lyns_color_normal CBCCC6
+lyns_color_command 5CCFE6
+lyns_color_quote BAE67E
+lyns_color_redirection D4BFFF
+lyns_color_end F29E74
+lyns_color_error FF3333
+lyns_color_param CBCCC6
+lyns_color_comment 5C6773
+lyns_color_match F28779
+lyns_color_selection --background=FFCC66
+lyns_color_search_match --background=FFCC66
+lyns_color_history_current --bold
+lyns_color_operator FFCC66
+lyns_color_escape 95E6CB
+lyns_color_cwd 73D0FF
+lyns_color_cwd_root red
+lyns_color_valid_path --underline
+lyns_color_autosuggestion 707A8C
+lyns_color_user brgreen
+lyns_color_host normal
+lyns_color_cancel -r
+lyns_pager_color_completion normal
+lyns_pager_color_description B3A06D yellow
+lyns_pager_color_prefix normal --bold --underline
+lyns_pager_color_progress brwhite --background=cyan
+lyns_color_option CBCCC6
+lyns_color_keyword 5CCFE6

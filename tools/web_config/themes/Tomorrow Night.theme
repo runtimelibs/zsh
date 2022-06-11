@@ -1,0 +1,31 @@
+# name: 'Tomorrow Night'
+# preferred_background: 232323
+# url: 'https://github.com/chriskempson/tomorrow-theme'
+
+lyns_color_normal normal
+lyns_color_command b294bb
+lyns_color_quote b5bd68
+lyns_color_redirection 8abeb7
+lyns_color_end b294bb
+lyns_color_error cc6666
+lyns_color_param 81a2be
+lyns_color_comment f0c674
+lyns_color_match --background=brblue
+lyns_color_selection white --bold --background=brblack
+lyns_color_search_match bryellow --background=brblack
+lyns_color_history_current --bold
+lyns_color_operator 00a6b2
+lyns_color_escape 00a6b2
+lyns_color_cwd green
+lyns_color_cwd_root red
+lyns_color_valid_path --underline
+lyns_color_autosuggestion 969896
+lyns_color_user brgreen
+lyns_color_cancel -r
+lyns_color_host normal
+lyns_pager_color_completion normal
+lyns_pager_color_description B3A06D yellow
+lyns_pager_color_prefix normal --bold --underline
+lyns_pager_color_progress brwhite --background=cyan
+lyns_color_option 81a2be
+lyns_color_keyword b294bb

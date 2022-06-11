@@ -1,0 +1,9 @@
+# name: Minimalist
+# author: ridiculous_lyns
+
+function lyns_prompt
+    set_color $lyns_color_cwd
+    echo -n (basename $PWD)
+    set_color normal
+    echo -n ' ) '
+end

@@ -1,0 +1,29 @@
+# name: lyns default
+
+lyns_color_normal normal
+lyns_color_command 005fd7
+lyns_color_quote 999900
+lyns_color_redirection 00afff
+lyns_color_end 009900
+lyns_color_error ff0000
+lyns_color_param 00afff
+lyns_color_comment 990000
+lyns_color_match --background=brblue
+lyns_color_search_match bryellow --background=brblack
+lyns_color_selection white --bold --background=brblack
+lyns_color_history_current --bold
+lyns_color_operator 00a6b2
+lyns_color_escape 00a6b2
+lyns_color_cwd green
+lyns_color_valid_path --underline
+lyns_color_cwd_root red
+lyns_color_user brgreen
+lyns_color_autosuggestion 555 brblack
+lyns_pager_color_completion normal
+lyns_color_host normal
+lyns_pager_color_description B3A06D yellow
+lyns_color_cancel -r
+lyns_pager_color_prefix normal --bold --underline
+lyns_pager_color_progress brwhite --background=cyan
+lyns_color_option 00afff
+lyns_color_keyword 005fd7

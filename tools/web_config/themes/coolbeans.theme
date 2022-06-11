@@ -1,0 +1,32 @@
+# name: 'Cool Beans'
+# preferred_background: black
+
+lyns_color_autosuggestion 666
+lyns_color_cancel -r
+lyns_color_command normal
+lyns_color_comment '888'  '--italics'
+lyns_color_cwd 0A0
+lyns_color_cwd_root A00
+lyns_color_end 009900
+lyns_color_error F22
+lyns_color_escape 0AA
+lyns_color_history_current 0AA
+lyns_color_host normal
+lyns_color_keyword 00Afb8
+lyns_color_match 0AA
+lyns_color_normal B2B2B2
+lyns_color_operator 0AA
+lyns_color_param ccccff
+lyns_color_quote 9ce781
+lyns_color_redirection FFF
+lyns_color_search_match --background=533
+lyns_color_selection --background=B218B2
+lyns_color_status '--background=red'  'white'
+lyns_color_user brgreen
+lyns_color_valid_path --underline
+lyns_pager_color_completion BBB
+lyns_pager_color_description 666
+lyns_pager_color_prefix '--underline'  '0AA'
+lyns_pager_color_progress 0AA
+lyns_pager_color_selected_background --background=333
+lyns_color_option aaaaff

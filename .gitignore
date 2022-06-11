@@ -12,3 +12,17 @@ node_modules
 !.zshrc
 !.gitignore
 !.dockerignore
+!ascii 
+!ascii/**/*
+!fish/**/*
+!fish
+!lyns/**/*
+!lyns
+!tools/**/*
+!tools 
+!zsh.core
+!zsh.core/**/*
+!zsh.methods
+!zsh.methods/**/*
+!zshrc
+!zshrc/**/*

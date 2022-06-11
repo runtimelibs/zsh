@@ -1,0 +1,27 @@
+
+LYNS_STATICTIME_SHOW="${LYNS_STATICTIME_SHOW=false}"
+LYNS_STATICTIME_PREFIX="${LYNS_STATICTIME_PREFIX="at "}"
+LYNS_STATICTIME_SUFFIX="${LYNS_STATICTIME_SUFFIX="$LYNS_QUERY_DEFAULT_SUFFIX"}"
+LYNS_STATICTIME_FORMAT="${LYNS_STATICTIME_FORMAT=false}"
+LYNS_STATICTIME_12HR="${LYNS_STATICTIME_12HR=false}"
+LYNS_STATICTIME_COLOR="${LYNS_STATICTIME_COLOR="yellow"}"
+
+_lyns_time() {
+  [[ $LYNS_STATICTIME_SHOW == false ]] && return
+
+  local 'time_str'
+
+  if [[ $LYNS_STATICTIME_FORMAT != false ]]; then
+    time_str="${LYNS_STATICTIME_FORMAT}"
+  elif [[ $LYNS_STATICTIME_12HR == true ]]; then
+    time_str="%D{%r}"
+  else
+    time_str="%D{%T}"
+  fi
+
+  asyncs::section \
+    "$LYNS_STATICTIME_COLOR" \
+    "$LYNS_STATICTIME_PREFIX" \
+    "$time_str" \
+    "$LYNS_STATICTIME_SUFFIX"
+}

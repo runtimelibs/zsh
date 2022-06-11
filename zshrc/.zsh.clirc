@@ -1,0 +1,29 @@
+#!/usr/bin/env zsh
+# note: no logic to exit if CLI is disabled
+declare EXPLN="${VERBOSE:-1}"
+#
+# A very minimal loader
+#
+declare LYNS_QUIET=false
+declare LYNS_HOME="/Users/$(whoami)/.config"
+declare LYNS_INIT="${LYNS_HOME}/src/lyns/asyncs.init.lyns"
+
+source ~/.config/ascii/sysm
+
+if [[ $LYNS_QUIET -eq true ]]; then
+    _lyns_zshrc_sysmsg "in Ultra Quiet Ambient Mode"
+
+    # Make the .zshrc very quiet and protect the install file
+    "$(zsh ${LYNS_INIT} > ~/.login.log 2&1> /dev/null )"
+fi
+
+
+if [[ $LYNS_QUIET -eq false ]]; then
+    _lyns_zshrc_sysmsg "in System of a Down, Big Error Handshake Boombox Mode"
+    # Run the thing normally
+    if [[ $EXPLN -lte 2 ]]; then
+        "$(zsh ${LYNS_INIT} | tee -a ~/.login.log )"
+    else
+        "$(zsh ${LYNS_INIT} | tee -a ~/.login.log )"
+    fi
+fi

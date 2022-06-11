@@ -1,0 +1,34 @@
+# name: Default
+# author: Lily Ballard
+
+function lyns_prompt --description 'Write out the prompt'
+    set -l last_pipestatus $pipestatus
+    set -lx __lyns_last_status $status # Export for __lyns_print_pipestatus.
+    set -l normal (set_color normal)
+    set -q lyns_color_status
+    or set -g lyns_color_status --background=red white
+
+    # Color the prompt differently when we're root
+    set -l color_cwd $lyns_color_cwd
+    set -l suffix '>'
+    if functions -q lyns_is_root_user; and lyns_is_root_user
+        if set -q lyns_color_cwd_root
+            set color_cwd $lyns_color_cwd_root
+        end
+        set suffix '#'
+    end
+
+    # Write pipestatus
+    # If the status was carried over (if no command is issued or if `set` leaves the status untouched), don't bold it.
+    set -l bold_flag --bold
+    set -q __lyns_prompt_status_generation; or set -g __lyns_prompt_status_generation $status_generation
+    if test $__lyns_prompt_status_generation = $status_generation
+        set bold_flag
+    end
+    set __lyns_prompt_status_generation $status_generation
+    set -l status_color (set_color $lyns_color_status)
+    set -l statusb_color (set_color $bold_flag $lyns_color_status)
+    set -l prompt_status (__lyns_print_pipestatus "[" "]" "|" "$status_color" "$statusb_color" $last_pipestatus)
+
+    echo -n -s (prompt_login)' ' (set_color $color_cwd) (prompt_pwd) $normal (lyns_vcs_prompt) $normal " "$prompt_status $suffix " "
+end

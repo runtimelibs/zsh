@@ -1,14 +1,14 @@
 {
-  "name": "lyns",
-  "version": "0.9.67",
-  "description": "lyns language is a superset of fish-lang with an emphasis on portability and security.  It is a static build, automated from upstream fish, that accepts TrustMint IPv6 and IPFS pinmned validators for startup and allows complete customization of the fish language from a single startup command.  If you have set up a trust mint, you can easily drop you functions into a gzip file and simply link them as the \"runtimelibs\" value of your minted package,json.  Lyns will slurp your gzip file and mint your functions automatically.  If you want further customizaions you may consult our docs, the langauge has been modified to function via our CLI which you can always access via [ cmd + shift + . ] or .1 [enter],  our documentation is via [ cmd + shift + ? ] or .? [enter].",
+  "name": "runtimelibs-zsh",
+  "version": "0.1.0",
+  "description": "Runtimelibs is a project to create a component-based architecture out of all the many packages (pkg) that make up Able and Lyns Language.  This package deals with ZSH setup.",
   "main": "minted.js",
   "scripts": {
     "test": "ava"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/lab7io/lynshell.git"
+    "url": "git+ssh://git@github.com/runtimelibs/zsh.git"
   },
   "author": "Lynsei Asynynivynya",
   "license": "MIT",
@@ -17,16 +17,9 @@
   },
   "homepage": "https://bitbucket.org/lab7io/lynshell#readme",
   "cmds": [
-    "lyns_setup_alpine",
-    "bass ~/.bashrc && nvm install v14.19.0 && nvm use v14.19.0",
-    "bass npm install -g yarn",
-    "bass yarn global add pm2@latest npm-bump quicktype deno typescript tsc es-lint prettier dockerode dockerode-composenode-ssh greenlock greenlock-express",
-    "tsc typescript/rethinkdb.ts && node typescript/rethinkdb.js"
+    "zsh ./zshrc/.zshrc.tmplt"
   ],
   "dependencies": {
-    "ensure-rethinkdb": "^1.0.2",
-    "rethinkdb-ts": "^2.4.21",
-    "ts-md5": "^1.2.11"
   },
   "devDependencies": {
     "@types/node": "^17.0.38"
